@@ -9,23 +9,28 @@ from ui.Frame import AppFrame
 class Interface:
     def __init__(self,windows_w=400,windows_h=400):
         self.root = tk.Tk()
-
+        
+        self.root.title("Task Manager")
         self.root_w = windows_w
         self.root_h = windows_h
-
-        self.root.geometry(f"{self.root_h}x{self.root_w}")
-
-        icon_path = Path(__file__).parent.parent/".."/ "assets" / "icon.ico"
-        img = Image.open(icon_path)
-        icon = ImageTk.PhotoImage(img)
+        
+        self.root.geometry(f"{self.root_w}x{self.root_h}")
+        
+        base_path = Path(__file__).resolve().parent.parent
+        icon_path = base_path / "assets" / "icon.ico"
+        
+        try:
+            img = Image.open(icon_path)
+            icon = ImageTk.PhotoImage(img)
+            self.root.iconphoto(True, icon)
+        except FileNotFoundError:
+            print(f"Иконка не найдена по пути: {icon_path}")
 
         self.frame = {}
         self.buttons = []
 
-        self.root.iconphoto(True, icon)
-
         self.create_interface()
-
+        
         self.root.mainloop()
 
     def create_interface(self):
