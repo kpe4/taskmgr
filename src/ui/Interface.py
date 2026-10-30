@@ -48,3 +48,6 @@ class Interface:
     def create_buttons(self):
         button_show_task = tk.Button(self.frame["menu"], text="посмотреть задачи",command=lambda :self.frame["menu"].hide(True))
         button_show_task.pack()
+
+if __name__ == "__main__":
+    app = Interface()
