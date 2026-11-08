@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "id": "89e18600-9f2c-4d96-838c-0efd0936d971",
+      "title": "задача 1",
+      "description": "описание 1",
+      "completed": false,
+      "completed_at": null,
+      "created_at": null,
+      "due_date": null
+    },
+    {
+      "id": "696e48f5-ac0d-43dd-acc9-9259e6e7de00",
+      "title": "задача 2",
+      "description": "описание 2",
+      "completed": false,
+      "completed_at": null,
+      "created_at": null,
+      "due_date": null
+    },
+    {
+      "id": "a0bcefe0-4d9c-4a55-910e-0a25d9ddbccf",
+      "title": "задача 3",
+      "description": "описание 3",
+      "completed": false,
+      "completed_at": null,
+      "created_at": null,
+      "due_date": null
+    }
+  ],
+  "created_at": null
+}
