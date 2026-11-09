@@ -6,8 +6,8 @@ from tkinter import ttk, messagebox
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from storage import create_task, delete_task, get_all_tasks, update_task
-from ui.task_list import TaskList
-from ui.task_form import TaskForm
+from ui.TaskList import TaskList
+from ui.TaskForm import TaskForm
 
 
 class TaskManagerApp(tk.Tk): # интерфейс приложения
